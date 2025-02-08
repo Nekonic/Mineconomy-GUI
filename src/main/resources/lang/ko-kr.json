@@ -1,8 +1,0 @@
-{
-  "plugin.enabled": "그래프 플러그인이 활성화 되었습니다.",
-  "plugin.disabled": "그래프 플러그인이 비활성화 되었습니다.",
-  "reload_message": "구성이 성공적으로 다시 로드되었습니다!",
-  "reload_message.lang": "구성이 불러와졌습니다. 언어가 다음으로 변경됨: ",
-  "graph.command.is-not-player": "이 명령어는 플레이어만 가능합니다.",
-  "graph.gui.home-item": "메인화면으로 돌아가기"
-}

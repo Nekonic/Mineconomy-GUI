@@ -30,7 +30,7 @@ processResources {
 
 jar {
     archiveFileName = 'Dynamic_Graph.jar'
-    if (!System.getenv("CI")) { // GitHub Actions 환경이 아닐 경우에만 적용
+    if (!System.getenv("CI")) { // if not GitHub Actions
         destinationDirectory = file("/home/nekonic/1server/plugins")
     }
 }

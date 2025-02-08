@@ -4,7 +4,6 @@ import nekonic.utils.Create_GUI_Item;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -50,7 +49,9 @@ public class DynamicGraphPlugin extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("graph")) {
             if (!(sender instanceof Player)) {
-                sender.sendMessage(ChatColor.RED + "This command can only be run by a player.");
+                sender.sendMessage(
+                        Component.text("This command can only be run by a player.",NamedTextColor.RED)
+                );
                 return true;
             }
 
@@ -206,7 +207,7 @@ public class DynamicGraphPlugin extends JavaPlugin implements Listener {
         // 데이터 포인트를 그리드에 매핑
         for (int i = 0; i < DATA_POINTS; i++) {
             int n = data[i];
-            // y 좌표 계산: (n - min) / (max - min) * 9 후 반올림
+            // y 좌표 계산: (n - min) / (max - min) * 9 후 반올림(뱅커스라운딩 사용)
             int y = (int) Math.round(((double)(n - min) / (max - min)) * (height - 1));
             int x = xPositions[i];
             int yPos = height - 1 - y; // 그리드의 y 좌표는 위에서 아래로 증가하므로 반전

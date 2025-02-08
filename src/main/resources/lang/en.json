@@ -1,8 +1,0 @@
-{
-  "plugin.enabled": "GraphPlugin has been enabled!",
-  "plugin.disabled": "GraphPlugin has been disabled!",
-  "reload_message": "Configuration reloaded successfully!",
-  "reload_message.lang": "Configuration reloaded. Language set to: ",
-  "graph.command.is-not-player": "This command can only be run by a player.",
-  "graph.gui.home-item": "back to menu"
-}
