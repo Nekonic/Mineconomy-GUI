@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class DynamicGraphPlugin extends JavaPlugin implements Listener {
+public class Main extends JavaPlugin implements Listener {
 
     private Map<Player, BukkitTask> updateTasks = new HashMap<>();
     private List<Integer> memoryData = new ArrayList<>();

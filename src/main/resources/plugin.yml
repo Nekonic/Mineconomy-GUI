@@ -1,6 +1,6 @@
-name: Dynamic_Graph
+name: mineconomy.GUI
 version: '${version}'
-main: nekonic.DynamicGraphPlugin
+main: nekonic.Main
 api-version: '1.21.1'
 commands:
   graph:
