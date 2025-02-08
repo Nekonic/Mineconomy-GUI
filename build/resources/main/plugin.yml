@@ -1,8 +1,0 @@
-name: Dynamic_Graph
-version: '1.0-SNAPSHOT'
-main: nekonic.DynamicGraphPlugin
-api-version: '1.21.1'
-commands:
-  graph:
-    description: Opens the dynamic graph GUI
-    usage: /graph
