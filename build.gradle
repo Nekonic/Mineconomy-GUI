@@ -29,7 +29,7 @@ processResources {
 }
 
 jar {
-    archiveFileName = 'Dynamic_Graph.jar'
+    archiveFileName = 'Mineconomy-GUI.jar'
     if (!System.getenv("CI")) { // if not GitHub Actions
         destinationDirectory = file("/home/nekonic/1server/plugins")
     }

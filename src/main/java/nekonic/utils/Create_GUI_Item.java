@@ -1,6 +1,5 @@
 package nekonic.utils;
 
-import nekonic.DynamicGraphPlugin;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import org.bukkit.Color;

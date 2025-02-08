@@ -1,4 +1,4 @@
-name: mineconomy.GUI
+name: Mineconomy-GUI
 version: '${version}'
 main: nekonic.Main
 api-version: '1.21.1'
